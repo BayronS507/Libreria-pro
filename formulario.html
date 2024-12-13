@@ -34,6 +34,28 @@
       border-radius: 50%; /* Make the image a circle (optional) */
     }
 
+    /* Button styles */
+    .home-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: linear-gradient(45deg, #00bfff, #1e90ff);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    .home-button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(45deg, #1e90ff, #00bfff);
+    }
+
     /* Form content styles */
     .form-content {
       padding-left: 150px; /* Adjust the padding to make space for the image */
@@ -79,6 +101,8 @@
   </style>
 </head>
 <body>
+  <a href="index.html" class="home-button">Inicio</a>
+
   <form action="your_processing_page.php" method="post">
     <div id="form-image">
       <!-- You can add an image here -->
