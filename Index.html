@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tu Librería - Astrolibros</title>
-    <body background="fondo.jpeg"> 
     <style>
         body {
-  background-image: url('fondo.jpeg');
-  background-repeat: repeat; /* Repetir la imagen en todas las direcciones */
-  background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
-}
-
-        body {
-            color: #ffffff; /* Rojo para títulos de libros */
+            background-image: url('fondo.jpeg');
+            background-repeat: repeat; /* Repetir la imagen en todas las direcciones */
+            background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+            color: #ffffff; /* Color para el texto */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-    background-color: #000000;
-    padding: 20px;
-    color: #ffffff;
-}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-
-}
         header {
-            background-color: #ffffff;
+            background-color: #000000;
             padding: 20px;
+            color: #ffffff;
         }
 
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: space-between;
         }
 
         nav li {
@@ -50,6 +39,7 @@ nav ul {
             text-decoration: none;
             color: #ffffff;
         }
+
         #banner {
             text-align: center;
             padding: 10px 0;
@@ -68,20 +58,6 @@ nav ul {
         #banner p {
             font-size: 18px;
         }
-        header {
-    background-color: #000000;
-    padding: 20px;
-    color: #ffffff;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-
-}
 
         .libro {
             display: inline-block;
@@ -97,15 +73,13 @@ nav ul {
         }
 
         .libro h3 {
-            
-    color: #ffffff; /* Rojo para títulos de libros */
-    
+            color: #ffffff; /* Color para títulos de libros */
             font-size: 18px;
             margin-bottom: 5px;
         }
 
         .libro p {
-            color: #85bb65; /* Azul para descripciones de libros */
+            color: #85bb65; /* Color para descripciones de libros */
             font-size: 14px;
             margin-bottom: 10px;
         }
@@ -130,34 +104,21 @@ nav ul {
     </style>
 </head>
 <body>
-   <header>
-<nav>
-<ul><br>
-<img src="Astronomy-01.webp" alt="logo"style="border-radius:100%;"width="100"height="100">
-<br><br><span><font color="white">¿Quieres pertencer a nuestra red de librería?</span></br></br></font></img>
-<h3><font color="white">Astrolibros</font> 
-<hr size="3px"color="white"/><br><br>
-<table width="100%" align="center" bgcolor="white" cellpadding="10">
-    <tr>
-      <td>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="libreria.html"> <button type="submit">Inicio</button></a> </form> 
-    <a href="libros.html"> <button type="submit">libros</button></a></form> 
-    <a href="mas.html"> <button type="submit">Mas venidos</button></a></form> 
-    <a href="contacto.html"> <button type="submit">contacto</button></a></form> 
-      <a href="login.html"> <button type="submit">iniciar sesion</button></a></form>
-      <td><a href="https://www.facebook.com/profile.php?id=61552134572485&mibextid=ZbWKwL"><img src="images.jpeg"width="50"height="50" alt="Facebook"style="border: 2px solid black; border-radius: 50%;"title="Astrolibreria"></a></td>
-      <td><a href="https://instagram.com/astrolibreria?igshid=OGQ5ZDc2ODk2ZA=="><img src="Instagram_logo_2022.svg"width="50"height="50"style="border: 2px solid black; border-radius: 50%;"title="Astrolibreria"></img></a></td>
-      <td><a href="Carritodecompras.html"><Img src="png-clipart-shopping-cart-shopping-cart.png"width="50"height="50"style="border: 2px solid black; border-radius: 50%;"title="Astrolibreria"></a></img></td>
-    </tr></table>
-</ul>
-</nav>
-</header>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="Astronomy-01.webp" alt="logo" style="border-radius:100%;" width="100" height="100"></li>
+                <li><span><font color="white">¿Quieres pertenecer a nuestra red de librería?</font></span></li>
+            </ul>
+            <h3><font color="white">Astrolibros</font></h3>
+            <hr size="3px" color="white"/>
+        </nav>
+    </header>
+
     <main>
         <section id="banner">
-            
             <h2>Bienvenido a Astrolibros</h2>
-            <p>Descubra una amplia selección de libros.</p>
+            <p>Descubre una amplia selección de libros.</p>
         </section>
 
         <section id="libros">
@@ -165,44 +126,37 @@ nav ul {
             <div class="libro">
                 <img src="libro1.jpg" alt="Libro 1">
                 <h3>Disponible</h3>
-   
                 <a href="libros.html" class="boton">Ver más</a>
             </div>
             <div class="libro">
                 <img src="libro2.jpg" alt="Libro 2">
                 <h3>Disponible</h3>
-             
                 <a href="libros.html" class="boton">Ver más</a>
             </div>
             <div class="libro">
-                <img src="libro3.jpg" alt="Libro 2">
+                <img src="libro3.jpg" alt="Libro 3">
                 <h3>Disponible</h3>
-               
                 <a href="libros.html" class="boton">Ver más</a>
             </div>
             <div class="libro">
-                <img src="libro4.jpg" alt="Libro 2">
+                <img src="libro4.jpg" alt="Libro 4">
                 <h3>Disponible</h3>
-             
                 <a href="libros.html" class="boton">Ver más</a>
             </div>
             <div class="libro">
-                <img src="libro5.jpg" alt="Libro 2">
+                <img src="libro5.jpg" alt="Libro 5">
                 <h3>Disponible</h3>
                 <a href="libros.html" class="boton">Ver más</a>
-                
             </div>
-            </section>
+        </section>
 
         <section id="sobre-nosotros">
-           <center> <h2>Sobre nosotros</h2> </center> 
+            <center><h2>Sobre nosotros</h2></center>
         </section>
     </main>
 
     <footer>
-        <p>&copy; te invitamos a descubrir el poder y la sabiduría de las estrellas. Somos tu destino para libros especializados en astrología, cartas astrales personalizadas y una cuidada selección de accesorios espirituales. Nuestro objetivo es guiarte en tu viaje espiritual y ayudarte a conectar con el cosmos. Explora, aprende y déjate inspirar por el universo.</p>
-    </p>
+        <p>&copy; Te invitamos a descubrir el poder y la sabiduría de las estrellas. Somos tu destino para libros especializados en astrología, cartas astrales personalizadas y una cuidada selección de accesorios espirituales. Nuestro objetivo es guiarte en tu viaje espiritual y ayudarte a conectar con el cosmos. Explora, aprende y déjate inspirar por el universo.</p>
     </footer>
-    
 </body>
 </html>
