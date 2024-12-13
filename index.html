@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Librería - Astrolibros</title>
     <style>
         body {
             background-image: url('fondo.jpeg');
-            background-repeat: repeat; /* Repetir la imagen en todas las direcciones */
-            background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+            background-repeat: repeat;
+            background-size: cover;
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #000000;
             padding: 20px;
             color: #ffffff;
+            text-align: center;
         }
 
         nav ul {
@@ -25,27 +25,37 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 10px;
         }
 
         nav li {
-            display: inline-block;
-            margin-right: 20px;
+            display: inline;
         }
 
         nav a {
             text-decoration: none;
-            color: #ffffff;
+        }
+
+        nav button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, #00bfff, #1e90ff);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        nav button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #1e90ff, #00bfff);
         }
 
         #banner {
             text-align: center;
-            padding: 10px 0;
-        }
-
-        #banner img {
-            width: 100%;
-            margin-bottom: 20px;
+            padding: 20px 0;
         }
 
         #banner h2 {
@@ -76,12 +86,6 @@
             margin-bottom: 5px;
         }
 
-        .libro p {
-            color: #85bb65;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
         .libro a.boton {
             display: inline-block;
             padding: 5px 10px;
@@ -102,73 +106,61 @@
     </style>
 </head>
 <body>
-   <header>
-       <nav>
-           <ul>
-               <li><img src="Astronomy-01.webp" alt="logo" style="border-radius:100%;" width="100" height="100"></li>
-               <li><span style="color: white;">¿Quieres pertenecer a nuestra red de librerías?</span></li>
-               <li><h3 style="color: white;">Astrolibros</h3></li>
-           </ul>
-       </nav>
-       <hr size="3px" color="white"/>
-       <table width="100%" align="center" bgcolor="white" cellpadding="10">
-           <tr>
-               <td>
-                   <a href="libreria.html"><button type="submit">Inicio</button></a>
-                   <a href="libros.html"><button type="submit">Libros</button></a>
-                   <a href="mas.html"><button type="submit">Más vendidos</button></a>
-                   <a href="contacto.html"><button type="submit">Contacto</button></a>
-                   <a href="login.html"><button type="submit">Iniciar sesión</button></a>
-               </td>
-               <td><a href="https://www.facebook.com/profile.php?id=61552134572485&mibextid=ZbWKwL"><img src="images.jpeg" width="50" height="50" alt="Facebook" style="border: 2px solid black; border-radius: 50%;" title="Astrolibreria"></a></td>
-               <td><a href="https://instagram.com/astrolibreria?igshid=OGQ5ZDc2ODk2ZA=="><img src="Instagram_logo_2022.svg" width="50" height="50" style="border: 2px solid black; border-radius: 50%;" title="Astrolibreria"></a></td>
-               <td><a href="Carritodecompras.html"><img src="png-clipart-shopping-cart-shopping-cart.png" width="50" height="50" style="border: 2px solid black; border-radius: 50%;" title="Astrolibreria"></a></td>
-           </tr>
-       </table>
-   </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="libreria.html"><button>Inicio</button></a></li>
+                <li><a href="libros.html"><button>Libros</button></a></li>
+                <li><a href="mas.html"><button>Más vendidos</button></a></li>
+                <li><a href="contacto.html"><button>Contacto</button></a></li>
+                <li><a href="login.html"><button>Iniciar sesión</button></a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <main>
-       <section id="banner">
-           <h2>Bienvenido a Astrolibros</h2>
-           <p>Descubra una amplia selección de libros.</p>
-       </section>
+    <main>
+        <section id="banner">
+            <h2>Bienvenido a Astrolibros</h2>
+            <p>Descubra una amplia selección de libros.</p>
+        </section>
 
-       <section id="libros">
-           <h2>Libros destacados</h2>
-           <div class="libro">
-               <img src="libro1.jpg" alt="Libro 1">
-               <h3>Disponible</h3>
-               <a href="libros.html" class="boton">Ver más</a>
-           </div>
-           <div class="libro">
-               <img src="libro2.jpg" alt="Libro 2">
-               <h3>Disponible</h3>
-               <a href="libros.html" class="boton">Ver más</a>
-           </div>
-           <div class="libro">
-               <img src="libro3.jpg" alt="Libro 3">
-               <h3>Disponible</h3>
-               <a href="libros.html" class="boton">Ver más</a>
-           </div>
-           <div class="libro">
-               <img src="libro4.jpg" alt="Libro 4">
-               <h3>Disponible</h3>
-               <a href="libros.html" class="boton">Ver más</a>
-           </div>
-           <div class="libro">
-               <img src="libro5.jpg" alt="Libro 5">
-               <h3>Disponible</h3>
-               <a href="libros.html" class="boton">Ver más</a>
-           </div>
-       </section>
+        <section id="libros">
+            <h2>Libros destacados</h2>
+            <div class="libro">
+                <img src="libro1.jpg" alt="Libro 1">
+                <h3>Disponible</h3>
+                <a href="libros.html" class="boton">Ver más</a>
+            </div>
+            <div class="libro">
+                <img src="libro2.jpg" alt="Libro 2">
+                <h3>Disponible</h3>
+                <a href="libros.html" class="boton">Ver más</a>
+            </div>
+            <div class="libro">
+                <img src="libro3.jpg" alt="Libro 3">
+                <h3>Disponible</h3>
+                <a href="libros.html" class="boton">Ver más</a>
+            </div>
+            <div class="libro">
+                <img src="libro4.jpg" alt="Libro 4">
+                <h3>Disponible</h3>
+                <a href="libros.html" class="boton">Ver más</a>
+            </div>
+            <div class="libro">
+                <img src="libro5.jpg" alt="Libro 5">
+                <h3>Disponible</h3>
+                <a href="libros.html" class="boton">Ver más</a>
+            </div>
+        </section>
 
-       <section id="sobre-nosotros">
-           <center><h2>Sobre nosotros</h2></center>
-       </section>
-   </main>
+        <section id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+        </section>
+    </main>
 
-   <footer>
-       <p>&copy; Te invitamos a descubrir el poder y la sabiduría de las estrellas. Somos tu destino para libros especializados en astrología, cartas astrales personalizadas y una cuidada selección de accesorios espirituales. Nuestro objetivo es guiarte en tu viaje espiritual y ayudarte a conectar con el cosmos. Explora, aprende y déjate inspirar por el universo.</p>
-   </footer>
+    <footer>
+        <p>&copy; Te invitamos a descubrir el poder y la sabiduría de las estrellas. Somos tu destino para libros especializados en astrología, cartas astrales personalizadas y una cuidada selección de accesorios espirituales. Nuestro objetivo es guiarte en tu viaje espiritual y ayudarte a conectar con el cosmos. Explora, aprende y déjate inspirar por el universo.</p>
+    </footer>
 </body>
 </html>
+
