@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: skyblue;
+    }
+
+    /* Form styles */
+    form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 40px;
+      border: 2px solid black;
+      border-radius: 5px;
+      position: relative; /* Make the form positionable */
+    }
+
+    /* Image styles */
+    #form-image{
+    position: absolute; /* Position the image absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position to the top-right corner */
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+    border: 2px solid black; /* Add a border for visual clarity */
+    border-radius: 50%; /* Make the image a circle (optional) */
+}
+
+    /* Form content styles */
+    .form-content {
+      padding-left: 150px; /* Adjust the padding to make space for the image */
+    }
+
+    label {
+      center;
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[tel],
+    textarea {
+      width: 75%;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      background-color: #0EF6EB;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <form action="your_processing_page.php" method="post">
+    <div id="form-image">
+     
+    </div>
+
+    <div class="form-content">
+      <h2>Formulario</h2>
+<br><br>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">apellido:</label>
+      <input type="text" id="apellido" name="Direccion" required>
+
+      <label for="usuario">usuario:</label>
+      <input type="usuario" id="usuario" name="Email" required>
+      
+      <label for="Email">contraseña:</label>
+      <input type="password" id="Password" placeholder="Password">
+
+
+<br><br>
+      <a href="login.html"></a><button type="submit">Enviar</button></a>
+    </form> 
+    </div>
+  </form>
+</body>
+</html>
